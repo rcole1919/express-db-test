@@ -1,0 +1,27 @@
+##### OS FILES
+.DS_Store
+.history
+
+##### Editors
+.*.swp
+.idea
+.vscode
+.vs
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+##### BUILD
+node_modules/
+npm-debug.log
+*.log
+logs/
+build/
+misc/
+.next
+out
+public/sw.js
+public/workbox-*.js
+
+##### ENVIRONMENT
+.env
