@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express DB Test</title>
+</head>
+<body>
+  <h1>Express DB Test</h1>
+  <p>Data from DB is:</p>
+  <h2 class="data"></h2>
+
+  <script>
+    const dataContainer = document.querySelector('.data');
+
+    fetch('https://some-api/data')
+      .then(data => data.json())
+      .then(data => {
+        dataContainer.textContent = data;
+      })
+      .catch(() => {
+        dataContainer.textContent = 'Data is not exist or error';
+      });
+  </script>
+</body>
+</html>
